@@ -1,0 +1,12 @@
+mixin nav(className, items)
+      nav(class=`${className}`)
+            ul(class=`${className}__list`)
+               each item in items
+                  li(class=`${className}__item`, class= item.class)
+                      a(class=`${className}__link` href=item.href)= item.text
+
+
+mixin thumbnail(imageName, caption)
+      .thumbnail
+         img(src=`/images/icons/${imageName}.png`)
+         h4.image-caption= caption

@@ -1,0 +1,15 @@
+extends ../template
+include ../components/_mixins 
+
+block variables
+        - var title = "Studio"
+
+block content
+
+    .wrapper
+        header.header
+            
+            +nav('nav-menu', [{href: '#', text: 'Home'}, {href: '#', text: 'About us'}, {href: '#', text: 'Projects'}, {href:'#', text: 'Contact us', class: 'nav-menu__item_blue'}])
+        
+        footer.footer
+
