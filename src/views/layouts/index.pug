@@ -8,8 +8,133 @@ block content
 
     .wrapper
         header.header
-            
-            +nav('nav-menu', [{href: '#', text: 'Home'}, {href: '#', text: 'About us'}, {href: '#', text: 'Projects'}, {href:'#', text: 'Contact us', class: 'nav-menu__item_blue'}])
-        
+            .logo
+                img(src="img/logo.png", alt="logo")
+            +nav('nav-menu', [{href: '#', text: 'Home', class: 'nav-menu__active'}, {href: '#', text: 'pages'}, {href: '#', text: 'journal'}, {href:'#', text: 'features'}, {href: '#', text: 'contact'}])
+        .hero
+            .wrapper
+                h1.hero__title Hello! We are Loom Studio
+                p.hero__descrip a creative media agency that believes in the power of creative ideas and great design.
+                .hero__img
+                    .hero__img-title STATIONERY BRANDING MOCKUP
+                    .hero__img-text Etiam porta sem malesuada <span .green-text>magna</span> mollis euismod
+            .whatdo
+                .wrapper
+                    .whatdo__cards
+                        .whatdo__card
+                            .whatdo__img
+                            .whatdo__title PRINT DESIGN
+                            .whatdo__descrip Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.
+                        .whatdo__card
+                            .whatdo__img
+                            .whatdo__title MOTION VIDEO
+                            .whatdo__descrip Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.
+                        .whatdo__card
+                            .whatdo__img
+                            .whatdo__title PACKAGE DESIGN
+                            .whatdo__descrip Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.
+                        .whatdo__card
+                            .whatdo__img
+                            .whatdo__title TIME MANAGEMENT
+                            .whatdo__descrip Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.
+            .procces
+                .wrapper
+                    h2.procces__ttitle OUR PROCESS
+                    .procces__descrip Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna posuere velit aliquet.
+                    .procces__list
+                        .procces__item
+                            .procces__item-img
+                            .procces__item-name 1. CREATIVE IDEAS
+                        .procces__item
+                            .procces__item-img
+                            .procces__item-name 2. RAPID SOLUTION
+                        .procces__item
+                            .procces__item-img
+                            .procces__item-name 3.MAGIC TOUCH
+                        .procces__item
+                            .procces__item-img
+                            .procces__item-name 4. AWARD WINNING
+            .projects
+                .wrapper
+                    h2.projects__title OUR RECENT PROJECTS
+                    .projects__list
+                        .projects__item
+                            .projects__img
+                            .projects__title DISK COVER MOCKUP
+                            .projects__text Music, PSD, Mockups
+                            .projects__descrip Nulla libero un pharetra augue etiam malesuada magna mollis. Nullam id dolor id nibh ultricies.
+                        .projects__item
+                            .projects__img
+                            .projects__title JOHN DOE BUSINESS CARD
+                            .projects__text Corporate, Card
+                            .projects__descrip Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod erat a ante.
+                        .projects__item
+                            .projects__img
+                            .projects__title INFOGRAPHIC ELEMENTS
+                            .projects__text Element, Graphic
+                            .projects__descrip Euismod quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo.
+            .customers
+                h2.customers__title WHAT OUR CUSTOMERS THINK
+                .customers__slider
+                    .customers__descrip
+                        .customers__text Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor gravida at eget metus. 
+                        .customers__name Barclay Widerski
+            .journal
+                .wrapper
+                    .journal__list
+                        .journal__item
+                            .journal__img
+                            .journal__info
+                                .journal__date 21 feb
+                                .journal__title
+                                    .journal__title-name Ultricies Cras Ullamcorper Elit
+                                    .journal__title-info Journal, Article  |  7 Comments 
+                            .journal__descrip Nulla libero un pharetra augue etiam malesuada magna mollis. Praesent commodo cursus magna scelerisque. 
+                        .journal__item
+                            .journal__img
+                            .journal__info
+                                .journal__date 21 feb
+                                .journal__title
+                                    .journal__title-name Sem Elit Amet Vestibulum
+                                    .journal__title-info JGraphic, Article  | 13 Comments 
+                            .journal__descrip Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        .journal__item
+                            .journal__img
+                            .journal__info
+                                .journal__date 21 feb
+                                .journal__title
+                                    .journal__title-name Vestibulum Magna Venenatis Tellus
+                                    .journal__title-info Journal, Article, Poster  |  11 Comments 
+                            .journal__descrip Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.
+
         footer.footer
+            .footer__up
+                .footer__list
+                    .footer__item
+                        .footer__title GET IN TOUCH
+                        .footer__descrip Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. 
+                        .footer__info
+                            .footer__address Moonshine Street No: 14/05 Light City, Jupiter
+                            .footer__phone 0247 541 65 87
+                            .footer__mail support@longwave.com
+                    .footer__item
+                        .footer__title TWITTER
+                        .footer__descrip
+                            p Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.
+                            p Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.
+                            p Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis
+                    .footer__item
+                        .footer__title POPULAR POSTS
+                        .footer__descrip
+                            p Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
+                            p Scelerisque nisl consectetur et.
+                            p Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    .footer__item 
+                        .footer__title ABOUT US
+                        .footer__desrip
+                            p Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+                            p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit tempus
+
+            .footer__down
+                .footer__copyright © 2013 Loom. All rights reserved. Theme by elemis.
 

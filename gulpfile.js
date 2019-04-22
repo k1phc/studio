@@ -57,7 +57,7 @@ function styles() {
 function cleanFiles() {
     return gulp.src(paths.root)
         .pipe(clean({read: false}))
-        .pipe(gulp.dest(paths.root));
+        .pipe(clean());
 }
 
 function images() {
