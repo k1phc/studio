@@ -13,6 +13,7 @@
     "gulp": "^4.0.0"
   },
   "dependencies": {
+    "@types/gulp-autoprefixer": "0.0.31",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.0.0",

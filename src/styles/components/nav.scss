@@ -1,0 +1,10 @@
+.nav-menu{
+    &__list{
+    display: flex;
+    list-style: none;
+    font-size: rem(13px);
+    }
+    &__item{
+        margin-right: rem(60px);
+    }
+}

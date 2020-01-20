@@ -6,20 +6,25 @@ block variables
 
 block content
 
-    .wrapper
+    
         header.header
-            .logo
-                img(src="img/logo.png", alt="logo")
-            +nav('nav-menu', [{href: '#', text: 'Home', class: 'nav-menu__active'}, {href: '#', text: 'pages'}, {href: '#', text: 'journal'}, {href:'#', text: 'features'}, {href: '#', text: 'contact'}])
+            .wrapper
+                .container
+                    .logo
+                        img(src="images/Logo.png", alt="logo")
+                    +nav('nav-menu', [{href: '#', text: 'Home', class: 'nav-menu__active'}, {href: '#', text: 'pages'}, {href: '#', text: 'journal'}, {href:'#', text: 'features'}, {href: '#', text: 'contact'}])
         .hero
             .wrapper
                 h1.hero__title Hello! We are Loom Studio
                 p.hero__descrip a creative media agency that believes in the power of creative ideas and great design.
                 .hero__img
-                    .hero__img-title STATIONERY BRANDING MOCKUP
-                    .hero__img-text Etiam porta sem malesuada <span .green-text>magna</span> mollis euismod
+                    img(src="images/hero.png", alt="hero" class="hero__img-pic")
+                    .hero__img-block
+                        span.hero__img-title STATIONERY BRANDING MOCKUP
+                        .hero__img-text Etiam porta sem malesuada <span class="green-text">magna</span> mollis euismod
             .whatdo
                 .wrapper
+                    .whatdo__maine-title What we do
                     .whatdo__cards
                         .whatdo__card
                             .whatdo__img
